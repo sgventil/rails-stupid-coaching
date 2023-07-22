@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <h1>Stupid Coaching</h1>
+
+  <div class="grey-stripe">
+    <p class="question"><%= params[:question] %></p>
+    <p class="answer"><em>-You</em></p>
+  </div>
+
+  <div class="grey-stripe coach">
+    <p class="question"><strong><%= @coach %></strong></p>
+    <p class="answer"><em>-Your Coach</em></p>
+  </div>
+
+  <%= link_to("Ask a new question", ask_path) %>
+</div>
