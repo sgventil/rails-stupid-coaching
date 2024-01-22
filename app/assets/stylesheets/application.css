@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 {
+  margin-left: 20px;
+  padding-bottom: 25px;
+ }
+
+ .content-ask {
+  border-left: 6px solid rgb(156, 156, 156, 0.5);
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.content-answer {
+  border-left: 6px solid rgb(156, 156, 156, 0.5);
+  margin-left: 20px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 174, 0.6);
+  max-width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Adjust as needed */
+  margin-left: 20px; /* Center the form horizontally */
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  width: max-content;
+}

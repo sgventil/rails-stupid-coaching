@@ -1,0 +1,19 @@
+<h1>Stupid Coaching</h1>
+
+<div class="content-ask">
+  <p><%= params[:question] %></p>
+  <p>-You</p>
+</div>
+
+<div class="content-answer">
+  <p><% if params[:question] == "I am going to work" %></p>
+       <%= "Great!" %>
+     <% elsif params[:question].include?("?") %>
+       <%= "Silly question, get dressed and go to work!" %>
+     <% else %>
+       <%= "I don't care, get dressed and go to work!" %>
+     <% end %></p>
+  <p>- Your Coach</p>
+</div>
+
+<%= link_to("Ask a new question", ask_path, style: "text-decoration: none; margin-left: 20px;") %>
